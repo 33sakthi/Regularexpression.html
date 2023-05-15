@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regular Expression Example</title>
+</head>
+<body>
+    <?php
+        $string = "HTTP status code:200";
+        $pattern = '/HTTP status code:200/';
+        
+        if (preg_match($pattern, $string)) {
+            echo "String matched the pattern.";
+        } else {
+            echo "String did not match the pattern.";
+        }
+    ?>
+</body>
+</html>
